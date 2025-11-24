@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Luxurious Dark-Mode Portfolio - Full Stack Developer"
+    />
+    <title>Portfolio - Khalid AL-Kurdi</title>
+    
+    <link rel="icon" href="Logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- 
+        README:
+        1. To run this project, simply open this index.html file in a modern web browser.
+        2. The profile image is referenced as '/mnt/data/91163bf4-8adb-480a-b88f-bb11db76ac47.png'.
+           If the image does not load, please ensure the file exists at that path or update the src attribute 
+           in the 'hero-image-container' section below to point to a valid local image file.
+    -->
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo">ENG<span class="accent">.</span></a>
+        <button
+          class="mobile-menu-btn"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#footer" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content fade-in-left">
+          <span class="greeting">Hello, It’s Me</span>
+          <h1 class="hero-name">
+            Khalid <span class="text-gradient">Al-Kurdi</span>
+          </h1>
+          <h2 class="hero-role">Software Engineer</h2>
+          <p class="hero-tagline">
+            I build accessible and performant web experiences.
+            Turning complex problems into elegant solutions.
+          </p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/khalid-al-kurdi" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/khalidalkurdi" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://wa.me/962789486842" target="_blank" aria-label="Whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:khalidalkurdi541@gmail.com" target="_blank" aria-label="email">
+                <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <div class="cta-buttons">
+            <a href="https://drive.google.com/drive/folders/1r6jmySTWKlfv6VctDnLpiUu32eO-ueG6?usp=drive_link" class="btn btn-primary" target="_blank">Download CV</a>
+            <a href="#projects" class="btn btn-secondary">See Projects</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper fade-in-right">
+          <div class="hero-image-container">
+
+            <img
+              src="My.webp"
+              alt="Khalid Al-Kurdi "
+              class="profile-img"
+              loading="lazy"
+            />
+            <div class="neon-ring"></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2 class="section-title fade-in-up">
+          About <span class="accent">Me</span>
+        </h2>
+        <div class="about-content">
+          <div class="about-text fade-in-up">
+            <p>
+              I'm a passionate developer with a keen eye for design and a drive
+              for creating seamless digital experiences. With over 2 years of
+              experience in full-stack development, I specialize in building
+              scalable web applications that solve real-world problems. My
+              approach combines technical expertise with creative
+              problem-solving.
+            </p>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <span class="stat-number" data-target="2">-25</span
+                ><span class="plus">+</span>
+                <span class="stat-label">Years Exp.</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="5">-25</span
+                ><span class="plus">+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="4">-25</span
+                ><span class="plus">+</span>
+                <span class="stat-label">Clients</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2 class="section-title fade-in-up">
+          Latest <span class="accent">Projects</span>
+        </h2>
+        <div class="projects-grid">
+          <!-- Project Card 1 -->
+          <!-- 
+            <article
+              class="project-card fade-in-up"
+              style="transition-delay: 0.1s"
+            >
+              <div class="project-image">
+                
+                <img src="hourglass-split.svg" class="placeholder-img" style="background: linear-gradient(45deg, #00e6ff, #0b1320)" alt="hourglass-split">
+                <div class="project-overlay">
+                  <a href="#" class="icon-link" target="_blank" aria-label="View Code"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a href="#" class="icon-link" target="_blank" aria-label="Live Demo"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Estatora</h3>
+                <h4>Full Stack Developer</h4>
+                <p>
+                  Real Estate platform for booking, buying and selling properties. 
+                </p>
+                <div class="tags">
+                  <span>Microservices Architecture</span>
+                  <span>RESTful API</span>
+                  <span>.NET Core 8.0</span>
+                  <span>.NET Identity</span>                                
+                  <span>Authentication</span>
+                  <span>Authorization</span>            
+                  <span>JWT</span>
+                  <span>Entity Framework</span>
+                  <span>LINQ</span>
+                  <span>SQL Server</span>
+                  <span>DTOs</span>                             
+                  <span>DI</span>                
+                  <span>Async Programming | await</span>                                                 
+                  <span>Cloudinary</span>
+                  <span>Stripe</span>               
+                  <span>Gmail / SMTP</span>
+                  <span>Swagger</span>
+                  <span>Postman</span>
+                  <span>Redis</span>
+                  <span>RabbitMQ</span>
+                  <span>gRPC</span>
+                  <span>API Gateway</span>
+                  <span>Docker</span>
+                  <span>Kubernetes</span>
+                  <span>CI/CD</span>                
+                </div>
+              </div>
+            </article>
+          -->
+
+          <!-- Project Card 2 -->
+          <article
+            class="project-card fade-in-up"
+            style="transition-delay: 0.2s"
+          >
+            <div class="project-image">
+              <img src="Lazmek.png" alt="Lazmek">                
+              <div class="project-overlay">
+                <a href="https://github.com/khalidalkurdi/Lazmek" target="_blank" class="icon-link" aria-label="View Code"
+                  ><i class="fab fa-github"></i
+                ></a>                  
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Lazmek</h3>
+              <h4>Full Stack Developer</h4>
+              <p>
+                E-commerce platform for buying and selling all products in the world.
+              </p>
+              <div class="tags">
+                <span>Clean Architecture</span>
+                <span>ASP.NET MVC 9.0</span>
+                <span>.NET Identity</span>
+                <span>Authentication</span>
+                <span>Authorization</span>
+                <span>Entity Framework</span>
+                <span>LINQ</span>
+                <span>SQL Server</span>                
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Bootstrap</span>
+                <span>jQuery</span>
+                <span>Cloudinary</span>
+                <span>Stripe</span>
+                <span>Facebook</span>
+                <span>Gmail / SMTP</span>
+                <span>DI</span>                
+                <span>Repository Pattern</span>                
+                <span>Unit of Work</span>
+                <span>Responsive Design</span>                
+                <span>Full Text Search</span>
+                <span>Toast Notifications</span>                
+              </div>
+            </div>
+          </article>
+          <!-- Project Card 3 -->
+          <article
+            class="project-card fade-in-up"
+            style="transition-delay: 0.3s"
+          >
+            <div class="project-image">
+              <img src="DashboardLazmek.png" alt="LazmekDashboard">
+              <div class="project-overlay">
+                <a href="https://github.com/khalidalkurdi/Lazmek/tree/master/LazmekUI/Areas/Admin" target="_blank" class="icon-link" aria-label="View Code"
+                  ><i class="fab fa-github"></i
+                ></a>                  
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Lazmek Dashboard</h3>
+              <h4>Full Stack Developer</h4>
+              <p>
+                  Admin Dashboard For managing users, products, orders and more.
+              </p>
+              <div class="tags">                  
+                <span>ASP.NET MVC 9.0</span>              
+            </div>
+          </article>
+          <!-- Project Card 4 -->
+          <article 
+          class="project-card fade-in-up"
+          style="transition-delay: 0.4s"
+          >
+            <div class="project-image">
+                <img src="Reziox.png" alt="Reziox Project" >              
+              <div class="project-overlay">
+                <a href="https://github.com/khalidalkurdi/RezioxAPI" target="_blank" class="icon-link" aria-label="View Code"
+                  ><i class="fab fa-github"></i
+                ></a>                
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Reziox</h3>
+              <h4>Backend Developer</h4>
+              <p>
+                Backend of Management and Booking Chalates App
+              </p>
+              <div class="tags">
+                <span>Clean Architecture</span>
+                <span>RESTful API</span>
+                <span>.NET Core 8.0</span>
+                <span>.NET Identity</span>                                
+                <span>Authentication</span>
+                <span>Authorization</span>            
+                <span>JWT</span>
+                <span>Entity Framework</span>
+                <span>LINQ</span>
+                <span>SQL Server</span>
+                <span>DTOs</span>                             
+                <span>DI</span>                
+                <span>Repository Pattern</span>
+                <span>Async Programming | await</span>                                                 
+                <span>Cloudinary</span>
+                <span>Stripe</span>               
+                <span>Gmail / SMTP</span>
+                <span>Bush Notification</span>
+                <span>Swagger</span>
+                <span>Postman</span>
+              </div>
+            </div>          
+          </article>
+           <!-- Project Card 5 -->
+          <article
+            class="project-card fade-in-up"
+            style="transition-delay: 0.5s"
+          >
+            <div class="project-image">
+              <img src="pharmapoints.png" alt="PharmaPoints Project">              
+              <div class="project-overlay">
+                <a href="#" target="_blank" class="icon-link" aria-label="View Code"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="#" target="_blank" class="icon-link" aria-label="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Pharma Points</h3>
+              <h4>Full Stack Developer</h4>
+              <p>
+                Pharmacy Website With Simple Admin Panel to manage products, categories and frequently customer Pills.
+              </p>
+              <div class="tags">
+                <span>Clean Architecture</span>
+                <span>ASP.NET MVC 9.0</span>
+                <span>.NET Identity</span>
+                <span>Authentication</span>
+                <span>Authorization</span>
+                <span>Entity Framework</span>
+                <span>LINQ</span>
+                <span>SQL Server</span>                
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Bootstrap</span>
+                <span>jQuery</span>
+                <span>Cloudinary</span>                
+                <span>Facebook</span>
+                <span>Gmail / SMTP</span>
+                <span>DI</span>                
+                <span>Repository Pattern</span>                
+                <span>Unit of Work</span>
+                <span>Responsive Design</span>                                
+                <span>Toast Notifications</span>
+              </div>
+            </div>
+          </article>
+          <!-- Project Card 6 -->
+          <article
+            class="project-card fade-in-up"
+            style="transition-delay: 0.6s"
+          >
+            <div class="project-image">
+              <img src="bookx.png" alt="BookX Project">
+              <div class="project-overlay">
+                <a href="https://github.com/khalidalkurdi/BookX" target="_blank" class="icon-link" aria-label="View Code"
+                  ><i class="fab fa-github"></i>
+                </a>
+                <!-- 
+                  <a href="#" class="icon-link" aria-label="Live Demo"
+                    ><i class="fas fa-external-link-alt"></i
+                  >
+                  </a>              
+                -->
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>BookX</h3>
+              <h4>Full Stack Developer</h4>
+              <p>
+                E-commerce platform for buying and selling all products in the world.
+              </p>
+              <div class="tags">
+                <span>Clean Architecture</span>
+                <span>ASP.NET MVC 8.0</span>
+                <span>.NET Identity</span>
+                <span>Authentication</span>
+                <span>Authorization</span>
+                <span>Entity Framework</span>
+                <span>LINQ</span>
+                <span>SQL Server</span>                
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Bootstrap</span>
+                <span>jQuery</span>                
+                <span>Stripe</span>
+                <span>Facebook</span>
+                <span>Gmail / SMTP</span>
+                <span>DI</span>                
+                <span>Repository Pattern</span>                
+                <span>Unit of Work</span>
+                <span>Responsive Design</span>                                
+                <span>Toast Notifications</span> 
+              </div>
+            </div>
+          </article>
+        </div>          
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <h2 class="section-title fade-in-up">
+          My <span class="accent">Skills</span>
+        </h2>
+        <div class="skills-main-container">
+          <!-- Tools -->
+          <div class="skills-category-wrapper tools-wrapper">
+            <h3 class="skill-category-title fade-in-up" style="transition-delay: 0.4s">Tools</h3>
+            <div class="skills-grid">
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>VS Code</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Visual Studio</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fas fa-rocket"></i></div>
+                <h3>Postman</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                <h3>Git & GitHub</h3>
+                <div class="skill-glow"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Frontend Skills -->
+          <div class="skills-category-wrapper">
+            <h3 class="skill-category-title fade-in-up">Frontend Development</h3>
+            <div class="skills-grid">
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                <h3>HTML</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                <h3>CSS</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                <h3>JavaScript</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                <h3>TypeScript</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                <h3>Bootstrap</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                <h3>JQuery</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fab fa-angular"></i></div>
+                <h3>Angular</h3>
+                <div class="skill-glow"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend Skills -->
+          <div class="skills-category-wrapper">
+            <h3 class="skill-category-title fade-in-up" style="transition-delay: 0.2s">Backend Development</h3>
+            <div class="skills-grid">
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                <h3>C#</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fas fa-cubes"></i></div>
+                <h3>OOP</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+                <h3>ASP.NET MVC</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+                <h3>.NET Core</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                <h3>REST APIs</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <h3>Entity Framework</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fas fa-filter"></i></div>
+                <h3>LINQ</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fas fa-server"></i></div>
+                <h3>SQL Server</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fas fa-syringe"></i></div>
+                <h3>Dependency Injection</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>API Security / JWT</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fas fa-user-lock"></i></div>
+                <h3>Auth & Authorization</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fas fa-sync"></i></div>
+                <h3>CI/CD</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                <h3>Docker</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                <h3>Clean Architecture</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fas fa-th"></i></div>
+                <h3>Microservices</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                <h3>Cloud (Azure)</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fas fa-vial"></i></div>
+                <h3>xUnit</h3>
+                <div class="skill-glow"></div>
+              </div>
+              <div class="skill-card fade-in-up">
+                <div class="skill-icon"><i class="fas fa-exchange-alt"></i></div>
+                <h3>Automapper</h3>
+                <div class="skill-glow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <h2 class="section-title fade-in-up">
+          My <span class="accent">Services</span>
+        </h2>
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card fade-in-up">
+            <div class="service-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3>Back-end Development</h3>
+            <p>
+              Robust and scalable server-side solutions using .NET, SQL Server, and modern architectural patterns.
+            </p>
+            <div class="service-glow"></div>
+          </div>
+          <!-- Service 2 -->
+          <div class="service-card fade-in-up" style="transition-delay: 0.2s">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Front-end Development</h3>
+            <p>
+              Engaging and responsive user interfaces built with HTML, CSS, JavaScript, and modern frameworks.
+            </p>
+            <div class="service-glow"></div>
+          </div>
+          <!-- Service 3 -->
+          <div class="service-card fade-in-up" style="transition-delay: 0.4s">
+            <div class="service-icon">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <h3>FullStack Development</h3>
+            <p>
+              End-to-end web application development, seamlessly integrating front-end and back-end technologies.
+            </p>
+            <div class="service-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Khalid Al-kurdi. All Rights Reserved.</p>
+        <div class="social-icons footer-socials">
+            <a href="https://www.linkedin.com/in/khalid-al-kurdi" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/khalidalkurdi" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>            
+            <a id="footer" href="https://wa.me/962789486842" target="_blank" aria-label="Whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a  href="mailto:khalidalkurdi541@gmail.com" target="_blank" aria-label="email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <a href="#home" class="back-to-top" aria-label="Back to top"
+          ><i class="fas fa-arrow-up"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
