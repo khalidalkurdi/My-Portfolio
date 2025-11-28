@@ -392,6 +392,7 @@ img {
 /* About Section */
 .about-section {
   background: var(--bg-2);
+  border-top: 1px solid var(--glass-border);
 }
 
 .about-content {
@@ -996,7 +997,7 @@ img {
 
 /* Education Section */
 .education-section {
-  background: var(--bg-1);
+  background: var(--bg-2);
 }
 
 .education-content {
