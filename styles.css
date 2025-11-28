@@ -993,3 +993,101 @@ img {
   border-color: var(--accent-1);
   box-shadow: 0 0 10px rgba(0, 230, 255, 0.3);
 }
+
+/* Education Section */
+.education-section {
+  background: var(--bg-1);
+}
+
+.education-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-card {
+  background: var(--card-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--border-radius);
+  padding: 2.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.education-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-1);
+  box-shadow: 0 10px 30px rgba(0, 38, 255, 0.15);
+}
+
+.education-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(0, 38, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: var(--accent-1);
+  margin-bottom: 0.5rem;
+  transition: var(--transition-fast);
+  z-index: 1;
+}
+
+.education-card:hover .education-icon {
+  background: var(--accent-1);
+  color: var(--bg-1);
+  transform: scale(1.1) rotate(5deg);
+}
+
+.education-details h3 {
+  font-size: 1.5rem;
+  color: var(--text-head);
+  margin-bottom: 0.5rem;
+  z-index: 1;
+}
+
+.education-details h4 {
+  font-size: 1.2rem;
+  color: var(--accent-2);
+  margin-bottom: 0.5rem;
+  z-index: 1;
+}
+
+.education-year {
+  display: inline-block;
+  background: rgba(0, 230, 255, 0.1);
+  color: var(--accent-1);
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.education-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(0, 38, 255, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  transition: width 0.5s ease, height 0.5s ease;
+  z-index: 0;
+}
+
+.education-card:hover .education-glow {
+  width: 300px;
+  height: 300px;
+}
